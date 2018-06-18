@@ -73,57 +73,6 @@ As y1 and y2 we take pair from 5 most popular bigrams in ciphertext.
 
 We check if we get right pairs (x1,x2; y1,y2) by calculating index of coincidence for plain text.
 
-## Installing
-
-### First step:
-
-In bash:
-
-```
-    cmake CMakeLists.txt
-```
-
-Output (approximately):
-
-```
--- The C compiler identification is GNU 5.4.0
--- The CXX compiler identification is GNU 5.4.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: pathToFolder
-```
-
-### Second step:
-
-```
-    make
-```
-
-Output (approximately):
-
-```
-Scanning dependencies of target AffineBigram
-[ 20%] Building CXX object CMakeFiles/AffineBigram.dir/main.cpp.o
-[ 40%] Building CXX object CMakeFiles/AffineBigram.dir/src/functions.cpp.o
-[ 60%] Building CXX object CMakeFiles/AffineBigram.dir/src/functions2.cpp.o
-[ 80%] Building CXX object CMakeFiles/AffineBigram.dir/src/functions3.cpp.o
-[100%] Linking CXX executable build/AffineBigram
-[100%] Built target AffineBigram
-```
-Executable will be placed in build folder.
-
 ## How to work with the program
 
 Put enciphered text in resources/encipheredText.txt
