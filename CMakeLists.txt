@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(include)
 
 add_executable(AffineBigram
-        src/main.cpp
-        src/functions.cpp
-        src/functions2.cpp
-        src/functions3.cpp
+        ${PROJECT_SOURCE_DIR}/src/main.cpp
+        ${PROJECT_SOURCE_DIR}/src/functions.cpp
+        ${PROJECT_SOURCE_DIR}/src/functions2.cpp
+        ${PROJECT_SOURCE_DIR}/src/functions3.cpp
         )
