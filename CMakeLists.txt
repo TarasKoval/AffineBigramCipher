@@ -3,7 +3,7 @@ project(AffineBigram)
 
 set(CMAKE_CXX_STANDARD 11)
 
-SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${AffineBigram_SOURCE_DIR}/build)
+include_directories(include)
 
 add_executable(AffineBigram
         src/main.cpp

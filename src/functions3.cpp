@@ -1,4 +1,4 @@
-#include "../include/functions3.h"
+#include "functions3.h"
 
 int multiply(std::pair<int, int> X1) {
     int x1 = X1.first * alphabetLength + X1.second;

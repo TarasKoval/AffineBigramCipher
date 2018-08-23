@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../include/functions.h"
-#include "../include/functions2.h"
-#include "../include/functions3.h"
+#include "functions.h"
+#include "functions2.h"
+#include "functions3.h"
 
 int main() {
     std::cout << "Features:\n";

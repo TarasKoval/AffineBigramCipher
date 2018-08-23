@@ -1,5 +1,5 @@
-#include "../include/functions2.h"
-#include "../include/functions3.h"
+#include "functions2.h"
+#include "functions3.h"
 
 std::vector<int> encrypt(const std::vector<int> &inputData, const int &a, const int &b) {
     std::vector<int> encipheredText;
