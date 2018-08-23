@@ -85,14 +85,14 @@ std::vector<std::pair<int, int>> solveTheSystem(const std::pair<int, int> inputX
                                                 modulo(X1 - X2, squaredAlphabetLength),
                                                 squaredAlphabetLength);
 
-    auto keysVector = new std::vector<std::pair<int, int>>;
+    std::vector<std::pair<int, int>> keysVector;
     int keyA, keyB;
     for (auto iter : reversedSolution) {
         keyA = modulo(reversed(iter, squaredAlphabetLength), squaredAlphabetLength);
         keyB = modulo((Y1 - keyA * X1), squaredAlphabetLength);
-        keysVector->push_back(std::make_pair(keyA, keyB));
+        keysVector.push_back(std::make_pair(keyA, keyB));
     }
-    return *keysVector;
+    return keysVector;
 }
 
 std::pair<int, int> calcKeys(const std::vector<int> &encryptedText) {
