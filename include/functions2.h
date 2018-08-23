@@ -1,5 +1,5 @@
-#ifndef LAB3MAIN_NEWFUNCTIONS_H
-#define LAB3MAIN_NEWFUNCTIONS_H
+#ifndef LAB3MAIN_NEW_FUNCTIONS_H
+#define LAB3MAIN_NEW_FUNCTIONS_H
 
 #include <iostream>
 #include <vector>
@@ -19,4 +19,4 @@ std::vector<std::pair<int, int>> return5CommonBigrams(const std::vector<int> &in
 
 int modulo(int number, int base);
 
-#endif //LAB3MAIN_NEWFUNCTIONS_H
+#endif //LAB3MAIN_NEW_FUNCTIONS_H

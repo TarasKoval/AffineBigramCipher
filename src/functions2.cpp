@@ -92,16 +92,16 @@ std::multimap<int, std::pair<int, int>> reverseBigramMap(const std::map<std::pai
 }
 
 std::vector<std::pair<int, int>> return5CommonBigrams(const std::vector<int> &inputData) {
-    auto biagramMap = createBigramMap(inputData);
-    auto reversedMap = reverseBigramMap(biagramMap);
+    auto bigramMap = createBigramMap(inputData);
+    auto reversedMap = reverseBigramMap(bigramMap);
 
     std::vector<std::pair<int, int>> output;
 
-    auto riter = reversedMap.rbegin();
+    auto rIter = reversedMap.rbegin();
     auto end = reversedMap.rend();
-    for (int counter = 0; riter != end && counter < 5; counter++) {
-        output.push_back(riter->second);
-        riter++;
+    for (int counter = 0; rIter != end && counter < 5; counter++) {
+        output.push_back(rIter->second);
+        rIter++;
     }
     return output;
 }

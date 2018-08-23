@@ -1,5 +1,5 @@
-#ifndef CHARACTERPROCESSING_FUNCTIONS_H
-#define CHARACTERPROCESSING_FUNCTIONS_H
+#ifndef CHARACTER_PROCESSING_FUNCTIONS_H
+#define CHARACTER_PROCESSING_FUNCTIONS_H
 
 #include <iostream>
 #include <fstream>
@@ -28,4 +28,4 @@ std::map<int, int> createCharMap(const std::vector<int> &inputData);
 
 double calcIndexOfCoincidence(const std::vector<int> &inputData);
 
-#endif //CHARACTERPROCESSING_FUNCTIONS_H
+#endif //CHARACTER_PROCESSING_FUNCTIONS_H

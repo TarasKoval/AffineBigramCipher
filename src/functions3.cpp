@@ -90,7 +90,7 @@ std::vector<std::pair<int, int>> solveTheSystem(const std::pair<int, int> inputX
     for (auto iter : reversedSolution) {
         keyA = modulo(reversed(iter, squaredAlphabetLength), squaredAlphabetLength);
         keyB = modulo((Y1 - keyA * X1), squaredAlphabetLength);
-        keysVector.push_back(std::make_pair(keyA, keyB));
+        keysVector.emplace_back(keyA, keyB);
     }
     return keysVector;
 }
