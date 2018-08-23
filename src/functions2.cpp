@@ -1,5 +1,4 @@
 #include "functions2.h"
-#include "functions3.h"
 
 std::vector<int> encrypt(const std::vector<int> &inputData, const int &a, const int &b) {
     std::vector<int> encipheredText;
@@ -24,11 +23,7 @@ std::vector<int> encrypt(const std::vector<int> &inputData, const int &a, const 
 }
 
 int modulo(int number, int base) {
-    while (number < 0) {
-        number += base;
-    }
-    number = number % base;
-    return number;
+    return (number < 0 ? (number % base) + base : number % base);
 }
 
 std::vector<int> decrypt(const std::vector<int> &inputData, const int &a, const int &b) {
