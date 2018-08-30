@@ -14,8 +14,8 @@ int reversed(int a, int b);
 
 std::vector<int> solveLinearEquation(int a, int b, int m);
 
-std::vector<std::pair<int, int>> solveTheSystem(std::pair<int, int> inputX1, std::pair<int, int> inputY1,
-                                                std::pair<int, int> inputX2, std::pair<int, int> inputY2);
+std::vector<std::pair<int, int>> solveTheSystem(const std::pair<int, int> &inputX1, const std::pair<int, int> &inputY1,
+                                                const std::pair<int, int> &inputX2, const std::pair<int, int> &inputY2);
 
 std::pair<int, int> calcKeys(const std::vector<int> &encipheredData);
 

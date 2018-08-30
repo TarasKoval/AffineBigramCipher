@@ -74,8 +74,10 @@ std::vector<int> solveLinearEquation(int a, int b, int m) {
     return output;
 }
 
-std::vector<std::pair<int, int>> solveTheSystem(const std::pair<int, int> inputX1, const std::pair<int, int> inputY1,
-                                                const std::pair<int, int> inputX2, const std::pair<int, int> inputY2) {
+std::vector<std::pair<int, int>> solveTheSystem(const std::pair<int, int> &inputX1,
+                                                const std::pair<int, int> &inputY1,
+                                                const std::pair<int, int> &inputX2,
+                                                const std::pair<int, int> &inputY2) {
     int X1 = multiply(inputX1);
     int X2 = multiply(inputX2);
     int Y1 = multiply(inputY1);
