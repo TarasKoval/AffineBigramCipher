@@ -1,55 +1,7 @@
 #include "functions2.h"
 
-std::vector<int> encrypt(const std::vector<int> &inputData, const int &a, const int &b) {
-    std::vector<int> encipheredText;
-
-    auto iter = inputData.begin();
-    auto end = inputData.end();
-
-    int X, Y;
-    int y1, y2;
-    while (iter != end && (iter + 1) != end) {
-        X = (*iter) * alphabetLength + (*(iter + 1));
-        Y = (a * X + b) % (squaredAlphabetLength);
-
-        y1 = Y / alphabetLength;
-        y2 = Y % alphabetLength;
-        encipheredText.push_back(y1);
-        encipheredText.push_back(y2);
-
-        iter += 2;
-    }
-    return encipheredText;
-}
-
 int modulo(int number, int base) {
     return (number < 0 ? (number % base) + base : number % base);
-}
-
-std::vector<int> decrypt(const std::vector<int> &inputData, const int &a, const int &b) {
-    std::vector<int> decipheredText;
-
-    auto iter = inputData.begin();
-    auto end = inputData.end();
-
-    int Y, X;
-    int x1, x2;
-    int reversedA = reversed(a, squaredAlphabetLength);
-
-    while (iter != end && (iter + 1) != end) {
-        Y = (*iter) * alphabetLength + (*(iter + 1));
-        X = modulo((reversedA * (Y - b)), squaredAlphabetLength);
-
-        x1 = X / alphabetLength;
-        x2 = modulo(X, alphabetLength);
-
-
-        decipheredText.push_back(x1);
-        decipheredText.push_back(x2);
-
-        iter += 2;
-    }
-    return decipheredText;
 }
 
 std::map<std::pair<int, int>, int> createBigramMap(const std::vector<int> &inputData) {

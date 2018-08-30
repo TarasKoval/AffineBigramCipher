@@ -6,11 +6,6 @@
 #include <numeric>
 #include <algorithm>
 #include "functions.h"
-#include "functions3.h"
-
-std::vector<int> encrypt(const std::vector<int> &inputData, const int &a, const int &b);
-
-std::vector<int> decrypt(const std::vector<int> &inputData, const int &a, const int &b);
 
 std::map<std::pair<int, int>, int> createBigramMap(const std::vector<int> &inputData);
 

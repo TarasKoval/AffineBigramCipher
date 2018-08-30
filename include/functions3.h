@@ -27,4 +27,8 @@ void outputVector(const std::vector<T> &data) {
     std::cout << std::endl;
 }
 
+std::vector<int> encrypt(const std::vector<int> &inputData, const int &a, const int &b);
+
+std::vector<int> decrypt(const std::vector<int> &inputData, const int &a, const int &b);
+
 #endif //LAB3MAIN_FUNCTIONS3_H
